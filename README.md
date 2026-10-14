@@ -11,7 +11,7 @@ namespace op1
 
     class Oyun
     { 
-        public void Kontrol() //do while ile girdi iste ve ifle kontrol et
+        public void Kontrol() 
         {
             string veri;
             do
@@ -28,13 +28,13 @@ namespace op1
             while (true);
         }
 
-        private string VeriAl() //yönerge ver readlinela veriyi al ve return et
+        private string VeriAl() 
         {
             Console.Write("Sayı giriniz: ");
             return Console.ReadLine();
         }
 
-        private void Sonuc(string girilenVeri) //tryparsela int yap ifle tek çift yazdır
+        private void Sonuc(string girilenVeri) 
         {
             if (int.TryParse(girilenVeri, out int sayi))
             {
@@ -53,7 +53,7 @@ namespace op1
             }
         }
 
-        private bool CiftMi(int sayi) //tek çift yazdırırken kullan %2 0sa true olcak şekilde
+        private bool CiftMi(int sayi) 
         {
             return sayi % 2 == 0;
         }
